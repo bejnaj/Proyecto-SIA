@@ -32,13 +32,13 @@ public class ProyectoSIA {
         private boolean disponibilidad;
         private int cupos;
         private List<estudiante> listaEspera;
-        public Recurso(String id, String tipoUso, String titulo, String materia) {
+        public Recurso(String id, String tipoUso, String titulo, String materia, int cupos) {
             this.id = id;
             this.tipoUso = tipoUso;
             this.titulo = titulo;
             this.materia = "";
             this.disponibilidad = true;
-            this.cupos = 0;
+            this.cupos = cupos;
             this.listaEspera = new ArrayList<>();
         }
         

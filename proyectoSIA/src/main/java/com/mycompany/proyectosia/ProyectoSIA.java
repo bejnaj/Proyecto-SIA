@@ -9,7 +9,9 @@ package com.mycompany.proyectosia;
  * @author benjo
  */
 public class ProyectoSIA {
-
+    public class estudiante{
+        
+    }
     public static void main(String[] args) {
         System.out.println("Esto es una prueba 2");
     }

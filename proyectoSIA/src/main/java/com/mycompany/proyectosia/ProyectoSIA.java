@@ -10,17 +10,38 @@ package com.mycompany.proyectosia;
  */
 import java.util.*;
 public class ProyectoSIA {
-    public class usuario{
-        
+    public class estudiante{
+        private String nombre;
+        private String rut;
+        private String curso;
+        private int cuposDisponibles;
+        private int cuposUtilizados;
+        public estudiante(String nombre, String rut, String curso){
+        this.nombre = nombre;
+        this.rut = rut;
+        this.curso = curso;
+        this.cuposDisponibles = 5;
+        this.cuposUtilizados = 0;
     }
-    public class recurso{
+    }
+    public class Recurso{
         private String id;
         private String tipoUso;
         private String titulo;
         private String materia;
         private boolean disponibilidad;
         private int cupos;
-        private List<usuario> listaEspera;
+        private List<estudiante> listaEspera;
+        public Recurso(String id, String tipoUso, String titulo, String materia) {
+            this.id = id;
+            this.tipoUso = tipoUso;
+            this.titulo = titulo;
+            this.materia = "";
+            this.disponibilidad = true;
+            this.cupos = 0;
+            this.listaEspera = new ArrayList<>();
+        }
+        
     }
     public static void main(String[] args) {
         System.out.println("Esto es una prueba 2");

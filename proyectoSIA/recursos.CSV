@@ -1,0 +1,26 @@
+id,tipoUso,titulo,materia,cupos  
+1,PDF,Don Quijote de la Mancha,Literatura,3  
+2,PDF,La Teoría de la Relatividad,Física,2  
+3,PDF,El Principito,Literatura,5  
+4,Video,Planet Earth: From Pole to Pole,Biología,4  
+5,Video,TED Talk – The Power of Vulnerability,Psicología,3  
+6,Video,Cosmos: Una odisea del espacio,Astronomía,1  
+7,Enlace,https://www.wikipedia.org,General,5  
+8,Enlace,https://www.khanacademy.org,Matemáticas,4  
+9,Enlace,https://ocw.mit.edu,Ingeniería,2  
+10,Enlace,https://scholar.google.com,Investigación,3
+11,PDF,1984,Literatura,2  
+12,PDF,Pride and Prejudice,Literatura,3  
+13,PDF,On the Origin of Species,Biología,1  
+14,PDF,Divine Comedy,Literatura,2  
+15,PDF,Principia Mathematica,Matemáticas,1  
+16,Video,BBC Earth: Blue Planet,Biología,3  
+17,Video,TED Talk - Do Schools Kill Creativity?,Educación,2  
+18,Video,Crash Course World History,Historia,4  
+19,Video,Kurzgesagt: The Egg,Filosofía,5  
+20,Video,Veritasium: What If?,Ciencia,2  
+21,Enlace,https://www.coursera.org,Educación,3  
+22,Enlace,https://www.edx.org,Educación,3  
+23,Enlace,https://archive.org,Historia,4  
+24,Enlace,https://www.nationalgeographic.com,Biología,2  
+25,Enlace,https://plato.stanford.edu,Filosofía,2

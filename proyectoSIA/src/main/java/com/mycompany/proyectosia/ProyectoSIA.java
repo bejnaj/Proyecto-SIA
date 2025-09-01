@@ -59,7 +59,7 @@ public class ProyectoSIA {
         private String materia;
         private boolean disponibilidad;
         private int cupos;
-        private List<estudiante> listaEspera;
+        private List<estudiante> listaPoseedores;
         public Recurso() {                     //Constructor que lo arregla  Leandro Raul bravo guerrero 22006725-4
             this.id = 0;
             this.tipoUso = "No definido";
@@ -67,7 +67,7 @@ public class ProyectoSIA {
             this.materia = "No definida";
             this.disponibilidad = false;
             this.cupos = 0;
-            this.listaEspera = new ArrayList<>();
+            this.listaPoseedores = new ArrayList<>();
         }
         //GETTERS de recurso
         public int getId(){return id;}
@@ -76,19 +76,19 @@ public class ProyectoSIA {
         public String getMateria(){return materia;}
         public int getCupos(){return cupos;}
         //SETTERS de recuro
-        public void asignarId(int id){
+        public void setId(int id){
             this.id = id;
         }
-        public void asignarTipoUso (String tipoUso){
+        public void setTipoUso (String tipoUso){
             this.tipoUso = tipoUso;
         }
-        public void asignarTitulo (String titulo){
+        public void setTitulo (String titulo){
             this.titulo = titulo;
         }
-        public void asignarMateria (String materia){
+        public void setMateria (String materia){
             this.materia = materia;
         }
-        public void asignarCupos (int cupos){
+        public void setCupos (int cupos){
             this.cupos = cupos;
         }
     } 

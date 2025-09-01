@@ -2,8 +2,7 @@
 
 ## Descripción 
 
-Nuestro Proyecto SIA es un gestor de recursos estudiantiles para usuarios de un colegio. Los usuarios pueden pedir por medio nuestro gestor un listado del registro de alumnos, profesores, asignaturas y recursos digitales (pdfs, videos, etc). 
-Además de poder agregar cualquier tipo de recurso digital a la base de datos. Está diseñado para ser eficiente y fácil de usar. 
+Nuestro Proyecto SIA es un gestor de recursos estudiantiles para usuarios de un colegio. Los usuarios pueden pedir por medio nuestro gestor un listado del registro de alumnos, profesores, asignaturas y recursos digitales (pdfs, videos, etc). Además de poder agregar cualquier tipo de recurso digital a la base de datos. Está diseñado para ser eficiente y fácil de usar. 
 
 ### Datos a utilizar 
 
@@ -22,3 +21,5 @@ Además de poder agregar cualquier tipo de recurso digital a la base de datos. E
 - Agregar reserva de recurso digital.
 
 ## Datos iniciales
+
+Para este avance del proyecto se han agregado algunos recursos digitales de prueba en el código, con el fin de verificar la correcta implementación de las colecciones, los métodos y el menú en consola. Más adelante, se implementará la lectura desde archivos CSV, lo que permitirá mostrar y administrar los recursos digitales de manera más eficiente.

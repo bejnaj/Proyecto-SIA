@@ -33,20 +33,20 @@ public class ProyectoSIA {
         public int getCuposDisponibles(){return cuposDisponibles;}
         public int getCuposUtilizados(){return cuposUtilizados;}
         // SETTERS de estudiante
-        public void setNombre(String name){
-            this.nombre = name;
+        public void setNombre(String nombre){
+            this.nombre = nombre;
         }
-        public void setRut(String Rut){
-            this.rut = Rut;
+        public void setRut(String rut){
+            this.rut = rut;
         }
-        public void setCurso(String nombrecurso){
-            this.curso = nombrecurso;
+        public void setCurso(String curso){
+            this.curso = curso;
         }
         public void setCuposDisponibles (int valor){
             this.cuposDisponibles = valor;
         }
-        public void setCuposUtilizados (int valor1){
-            this.cuposUtilizados = valor1;
+        public void setCuposUtilizados (int valor){
+            this.cuposUtilizados = valor;
         }
         // SERGIO BOLAINAS CODOCIA PARADA VA A AHACER LA SOBRECARGA DE METODOS AQUI !!!!!1
         
@@ -76,20 +76,20 @@ public class ProyectoSIA {
         public String getMateria(){return materia;}
         public int getCupos(){return cupos;}
         //SETTERS de recuro
-        public void asignarId(int ID){
-            this.id = ID;
+        public void asignarId(int id){
+            this.id = id;
         }
-        public void asignarTipoUso (String TP){
-            this.tipoUso = TP;
+        public void asignarTipoUso (String tipoUso){
+            this.tipoUso = tipoUso;
         }
-        public void asignarTitulo (String Title){
-            this.titulo = Title;
+        public void asignarTitulo (String titulo){
+            this.titulo = titulo;
         }
-        public void asignarMateria (String mater){
-            this.materia = mater;
+        public void asignarMateria (String materia){
+            this.materia = materia;
         }
-        public void asignarCupos (int cup){
-            this.cupos = cup;
+        public void asignarCupos (int cupos){
+            this.cupos = cupos;
         }
     } 
     private static void mostrarMenu() {

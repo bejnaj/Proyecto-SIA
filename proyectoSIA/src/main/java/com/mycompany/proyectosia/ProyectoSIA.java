@@ -104,7 +104,22 @@ public class ProyectoSIA {
     }
 
     public static void main(String[] args) throws IOException {
+        
+        // Usamos un Mapa con el id como clave
+        Map<Integer, Recurso> recursos = new HashMap<>();
 
+        // --- Recursos de prueba ---
+        Recurso r1 = new Recurso();
+        r1.setId(1); r1.setTitulo("Álgebra Lineal"); r1.setMateria("Matemáticas"); r1.setTipoUso("Libro"); r1.setCupos(3);
+        Recurso r2 = new Recurso();
+        r2.setId(2); r2.setTitulo("Electricidad Básica"); r2.setMateria("Física"); r2.setTipoUso("Video"); r2.setCupos(5);
+        Recurso r3 = new Recurso();
+        r3.setId(3); r3.setTitulo("Cálculo Diferencial"); r3.setMateria("Matemáticas"); r3.setTipoUso("Libro"); r3.setCupos(2);
+
+        recursos.put(r1.getId(), r1);
+        recursos.put(r2.getId(), r2);
+        recursos.put(r3.getId(), r3);
+        
         BufferedReader lector = new BufferedReader(new InputStreamReader(System.in));
         int opcion;
         String ingresado;

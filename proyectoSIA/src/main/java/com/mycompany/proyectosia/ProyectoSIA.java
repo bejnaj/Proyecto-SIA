@@ -54,7 +54,12 @@ public class ProyectoSIA {
             this.cupos = 0;
             this.listaPoseedores = new ArrayList<>();
         }
-
+        public void cambiarCupo(boolean disponibilidad){
+            this.disponibilidad = disponibilidad;
+        }
+        public void cambiarCupo(int cupo){
+            this.id = cupo;
+        }
         // GETTERS
         public int getId() { return id; }
         public String getTipoUso() { return tipoUso; }

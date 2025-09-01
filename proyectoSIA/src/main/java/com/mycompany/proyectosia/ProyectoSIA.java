@@ -8,22 +8,49 @@ package com.mycompany.proyectosia;
  *
  * @author benjo
  */
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
-import java.io.*;
 public class ProyectoSIA {
-    public class Estudiante{
+    public class estudiante{
         private String nombre;
         private String rut;
         private String curso;
         private int cuposDisponibles;
         private int cuposUtilizados;
-        public Estudiante(String nombre, String rut, String curso){
-        this.nombre = nombre;
-        this.rut = rut;
-        this.curso = curso;
-        this.cuposDisponibles = 5;
-        this.cuposUtilizados = 0;
+        public estudiante(String nombre, String rut, String curso){
+            this.nombre = nombre;
+            this.rut = rut;
+            this.curso = curso;
+            this.cuposDisponibles = 5;
+            this.cuposUtilizados = 0;
         }
+        // GETTERS de estudiante
+        public String getNombre(){return nombre;}
+        public String getRut(){return rut;}
+        public String getCurso(){return curso;}
+        public int getCuposDisponibles(){return cuposDisponibles;}
+        public int getCuposUtilizados(){return cuposUtilizados;}
+        // SETTERS de estudiante
+        public void setNombre(String name){
+            this.nombre = name;
+        }
+        public void setRut(String Rut){
+            this.rut = Rut;
+        }
+        public void setCurso(String nombrecurso){
+            this.curso = nombrecurso;
+        }
+        public void setCuposDisponibles (int valor){
+            this.cuposDisponibles = valor;
+        }
+        public void setCuposUtilizados (int valor1){
+            this.cuposUtilizados = valor1;
+        }
+        // SERGIO BOLAINAS CODOCIA PARADA VA A AHACER LA SOBRECARGA DE METODOS AQUI !!!!!1
+        
+        
     }
     public class Recurso{
         private int id;
@@ -32,18 +59,39 @@ public class ProyectoSIA {
         private String materia;
         private boolean disponibilidad;
         private int cupos;
-        private List<Estudiante> listaEspera;
-        public Recurso(int id, String tipoUso, String titulo, String materia, int cupos) {
-            this.id = id;
-            this.tipoUso = tipoUso;
-            this.titulo = titulo;
-            this.materia = materia;
-            this.disponibilidad = true;
-            this.cupos = cupos;
+        private List<estudiante> listaEspera;
+        public Recurso() {                     //Constructor que lo arregla  Leandro Raul bravo guerrero 22006725-4
+            this.id = 0;
+            this.tipoUso = "No definido";
+            this.titulo = "No definido";
+            this.materia = "No definida";
+            this.disponibilidad = false;
+            this.cupos = 0;
             this.listaEspera = new ArrayList<>();
         }
-        
-    }
+        //GETTERS de recurso
+        public int getId(){return id;}
+        public String getTipoUso(){return tipoUso;}
+        public String getTitulo(){return titulo;}
+        public String getMateria(){return materia;}
+        public int getCupos(){return cupos;}
+        //SETTERS de recuro
+        public void asignarId(int ID){
+            this.id = ID;
+        }
+        public void asignarTipoUso (String TP){
+            this.tipoUso = TP;
+        }
+        public void asignarTitulo (String Title){
+            this.titulo = Title;
+        }
+        public void asignarMateria (String mater){
+            this.materia = mater;
+        }
+        public void asignarCupos (int cup){
+            this.cupos = cup;
+        }
+    } 
     private static void mostrarMenu() {
         System.out.println("=== Menú de Recursos Educativos ===");
         System.out.println("1. Agregar recurso");
@@ -51,6 +99,8 @@ public class ProyectoSIA {
         System.out.println("3. Prestar recurso");
         System.out.println("4. Devolver recurso");
         System.out.println("5. Salir");
+        System.out.println("===================================");
+        System.out.println("Selecciona un numero");
     }
 
     public static void main(String[] args) throws IOException {

@@ -57,8 +57,8 @@ public class ProyectoSIA {
         public void cambiarCupo(boolean disponibilidad){
             this.disponibilidad = disponibilidad;
         }
-        public void cambiarCupo(int cupo){
-            this.id = cupo;
+        public void cambiarCupo(int cupos){
+            this.cupos = cupos;
         }
         // GETTERS
         public int getId() { return id; }

@@ -20,15 +20,34 @@ public class ProyectoSIA {
             this.cuposDisponibles = 5;
             this.cuposUtilizados = 0;
         }
-
+        
         // GETTERS
         public String getNombre() { return nombre; }
         public String getRut() { return rut; }
         public String getCurso() { return curso; }
         public int getCuposDisponibles() { return cuposDisponibles; }
         public int getCuposUtilizados() { return cuposUtilizados; }
-
+    
         // SETTERS
+
+        // asigna curso
+        public void asignarDatos(String curso) {
+            this.curso = curso;
+        }
+        
+        // asigna curso y cupos
+        public void asignarDatos(String curso, int cuposDisponibles) {
+            this.curso = curso;
+            this.cuposDisponibles = cuposDisponibles;
+        }
+        
+        // asigna curso, cupos y cupos utilizados
+        public void asignarDatos(String curso, int cuposDisponibles, int cuposUtilizados) {
+            this.curso = curso;
+            this.cuposDisponibles = cuposDisponibles;
+            this.cuposUtilizados = cuposUtilizados;
+        }
+
         public void setNombre(String nombre) { this.nombre = nombre; }
         public void setRut(String rut) { this.rut = rut; }
         public void setCurso(String curso) { this.curso = curso; }

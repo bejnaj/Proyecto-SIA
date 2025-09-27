@@ -61,9 +61,6 @@ Este sistema ha sido desarrollado en **Java (JDK 17+)** con **Maven**, y puede e
 - Implementar **búsqueda/filtrado avanzado** y **roles/permiso por usuario**.
 
 ## Ejemplo de uso
-¡de una! acá va la sección **“Ejemplo de uso”** con un formato coherente (numerado, con títulos en negrita, bullets y bloques de ejemplo), listo para pegar en tu README:
-
-## Ejemplo de uso
 
 1. **Iniciar sesión y abrir el menú principal**
 

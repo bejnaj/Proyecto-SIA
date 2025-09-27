@@ -19,19 +19,19 @@ Este sistema ha sido desarrollado en **Java (JDK 17+)** con **Maven**, y puede e
 1. **Descarga o clona el proyecto**
    - Opción ZIP: descarga el repositorio como `.zip` desde GitHub y descomprímelo.  
    - Opción Git:
-     ```bash
+     ```
      git clone https://github.com/bejnaj/Proyecto-SIA.git
      ```
 2. **Abre el proyecto en NetBeans o ubícate en la carpeta del módulo**
    - En NetBeans: `Archivo > Abrir carpeta...` y selecciona `Proyecto-SIA/proyectoSIA`.  
    - Por terminal: ve a la carpeta del módulo:
-     ```bash
+     ```
      cd Proyecto-SIA/proyectoSIA
      ```
 3. **Compila el código**
    - En NetBeans: `Run > Clean and Build Project`.  
    - Por terminal:
-     ```bash
+     ```
      mvn -DskipTests clean compile
      ```
 4. **Ejecuta el programa**

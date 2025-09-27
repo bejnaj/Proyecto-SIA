@@ -60,6 +60,40 @@ Este sistema ha sido desarrollado en **Java (JDK 17+)** con **Maven**, y puede e
 - Optimizar la **interfaz de usuario** (flujo y diseño) y añadir más validaciones.
 - Implementar **búsqueda/filtrado avanzado** y **roles/permiso por usuario**.
 
+Perfecto, ya encontré el `README.md` y los CSV de ejemplo. Te propongo agregar al README una nueva sección con las credenciales de administrador y ejemplos de los CSV. Aquí está el texto que podemos añadir al final del archivo:
+
+---
+
+## Acceso como Administrador
+
+Para acceder a **todas las funcionalidades del sistema**, debes iniciar sesión con las siguientes credenciales:
+
+* **RUT:** `admin`
+* **Nombre:** `admin`
+
+Esto te permitirá gestionar estudiantes, recursos y asignaturas sin restricciones.
+
+---
+
+## Ejemplos de CSV incluidos
+
+El proyecto trae consigo archivos CSV de ejemplo para que puedas probar la aplicación.
+
+### 📂 `alumnos.csv`
+
+Ejemplo de estudiantes cargados en el sistema:
+
+| nombre      | rut        | curso |
+| ----------- | ---------- | ----- |
+| Juan Pérez  | 12345678-9 | 3A    |
+| María Gómez | 98765432-1 | 4B    |
+
+### 📂 `recursos.CSV`
+
+Archivo con recursos disponibles (PDFs, enlaces, videos). Puedes editarlo para añadir tus propios materiales.
+
+---
+
 ## Ejemplo de uso
 
 1. **Iniciar sesión y abrir el menú principal**
@@ -119,10 +153,3 @@ Este sistema ha sido desarrollado en **Java (JDK 17+)** con **Maven**, y puede e
    Cierre de sesión → Guardando datos...
    Estado: Cambios persistidos. Aplicación finalizada.
    ```
-## Contribuciones
-
-Leandro Bravo:
-
-Bastián Contreras:
-
-Sergio Codoceo:

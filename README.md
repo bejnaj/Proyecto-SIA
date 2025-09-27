@@ -61,51 +61,67 @@ Este sistema ha sido desarrollado en **Java (JDK 17+)** con **Maven**, y puede e
 - Implementar **búsqueda/filtrado avanzado** y **roles/permiso por usuario**.
 
 ## Ejemplo de uso
+¡de una! acá va la sección **“Ejemplo de uso”** con un formato coherente (numerado, con títulos en negrita, bullets y bloques de ejemplo), listo para pegar en tu README:
 
-**Paso 1: Iniciar sesión y abrir el menú principal**
+## Ejemplo de uso
 
-Al ejecutar la aplicación se muestra la ventana de **Login**. Tras autenticarse, se accede al menú principal.
+1. **Iniciar sesión y abrir el menú principal**
 
-Ventana: Login
-Usuario: admin
-Estado: Sesión iniciada → Menú Principal
+   * **Acción:** Ejecutar la aplicación y autenticarse en la ventana de **Login**.
+   * **Resultado esperado:** Acceso al **Menú Principal**.
 
-**Paso 2: Registrar un nuevo recurso digital**
+   ```
+   Ventana: Login
+   Usuario: admin
+   Estado: Sesión iniciada → Menú Principal
+   ```
 
-Desde el menú, el usuario agrega un recurso (ej. un PDF o enlace) y completa los datos.
+2. **Registrar un nuevo recurso digital**
 
-Opción seleccionada: Recursos → Agregar
-Título: Guía de Física I
-Tipo: PDF
-URL: https://ejemplo.edu/guias/fisica1.pdf
-Descripción: Material de apoyo para la unidad 1
+   * **Acción:** En el menú, ir a **Recursos → Agregar** y completar los datos.
+   * **Resultado esperado:** Recurso creado y disponible para asociar.
 
-**Paso 3: Asociar el recurso a una asignatura**
+   ```
+   Opción: Recursos → Agregar
+   Título: Guía de Física I
+   Tipo: PDF
+   URL: https://ejemplo.edu/guias/fisica1.pdf
+   Descripción: Material de apoyo para la unidad 1
+   ```
 
-El usuario vincula el recurso recién creado con la asignatura correspondiente.
+3. **Asociar el recurso a una asignatura**
 
-Opción seleccionada: Recursos → Asociar a asignatura
-Recurso: Guía de Física I
-Asignatura: Física I (1º Medio A)
-Resultado: Asociación realizada correctamente
+   * **Acción:** En **Recursos → Asociar a asignatura**, seleccionar el recurso y la asignatura.
+   * **Resultado esperado:** Recurso asociado correctamente a la asignatura.
 
-**Paso 4: Ver la lista de recursos por asignatura**
+   ```
+   Opción: Recursos → Asociar a asignatura
+   Recurso: Guía de Física I
+   Asignatura: Física I (1º Medio A)
+   Resultado: Asociación realizada correctamente
+   ```
 
-Se verifica que el recurso figure en el listado de la asignatura.
+4. **Ver la lista de recursos por asignatura**
 
-Opción seleccionada: Recursos → Listar por asignatura
-Asignatura: Física I (1º Medio A)
-Listado:
+   * **Acción:** En **Recursos → Listar por asignatura**, elegir la asignatura.
+   * **Resultado esperado:** Listado con el recurso agregado.
 
-Guía de Física I (PDF) — https://ejemplo.edu/guias/fisica1.pdf
+   ```
+   Opción: Recursos → Listar por asignatura
+   Asignatura: Física I (1º Medio A)
+   Listado:
+    - Guía de Física I (PDF) — https://ejemplo.edu/guias/fisica1.pdf
+   ```
 
-**Paso 5: Cerrar la aplicación (guardado automático)**
+5. **Cerrar la aplicación (guardado automático)**
 
-Al cerrar la app, el sistema guarda los cambios automáticamente.
+   * **Acción:** Salir del sistema desde el menú correspondiente o cerrando la ventana.
+   * **Resultado esperado:** Persistencia de los cambios (guardado automático).
 
-Cierre de sesión → Guardando datos...
-Estado: Cambios persistidos. Aplicación finalizada.
-
+   ```
+   Cierre de sesión → Guardando datos...
+   Estado: Cambios persistidos. Aplicación finalizada.
+   ```
 ## Contribuciones
 
 Leandro Bravo:

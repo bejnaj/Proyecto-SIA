@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import com.mycompany.proyectosia.modelo.Estudiante;
 import com.mycompany.proyectosia.persistencia.GestorDatos;
+import com.mycompany.proyectosia.vista.MenuPrincipalUI;
 
 public class LoginUI extends JFrame {
     public LoginUI() {
@@ -21,20 +22,33 @@ public class LoginUI extends JFrame {
         JButton btnLogin = new JButton("Iniciar Sesión");
         JButton btnRegistrar = new JButton("Registrar Usuario");
 
+        // ---- LOGIN ----
         btnLogin.addActionListener(e -> {
             String rut = txtRut.getText().trim();
             String nombre = txtNombre.getText().trim();
+            if (rut.isEmpty() || nombre.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Ingrese RUT y Nombre.");
+                return;
+            }
+
+            // Caso administrador
+            if (rut.equalsIgnoreCase("admin") && nombre.equalsIgnoreCase("admin")) {
+                Estudiante adminUser = new Estudiante("admin", "admin", "ADMIN");
+                new MenuPrincipalUI(adminUser).setVisible(true);
+                dispose();
+                return;
+            }
+
             Estudiante encontrado = GestorDatos.buscarEstudiantePorRut(rut);
             if (encontrado != null && encontrado.getNombre().equalsIgnoreCase(nombre)) {
-                JOptionPane.showMessageDialog(this, "Bienvenido " + encontrado.getNombre());
+                new MenuPrincipalUI(encontrado).setVisible(true);
                 dispose();
-                MenuPrincipalUI menu = new MenuPrincipalUI(encontrado);
-                menu.setVisible(true);
             } else {
-                JOptionPane.showMessageDialog(this, "Usuario no encontrado. Regístrese primero.");
+                JOptionPane.showMessageDialog(this, "Usuario no encontrado o nombre no coincide.");
             }
         });
 
+        // ---- REGISTRO + AUTO LOGIN ----
         btnRegistrar.addActionListener(e -> {
             String rut = txtRut.getText().trim();
             String nombre = txtNombre.getText().trim();
@@ -45,7 +59,9 @@ public class LoginUI extends JFrame {
             }
             Estudiante nuevo = new Estudiante(nombre, rut, curso.trim());
             GestorDatos.agregarEstudiante(nuevo);
-            JOptionPane.showMessageDialog(this, "Usuario registrado correctamente.");
+            JOptionPane.showMessageDialog(this, "Usuario registrado correctamente. Iniciando sesión...");
+            new MenuPrincipalUI(nuevo).setVisible(true);
+            dispose();
         });
 
         add(lblRut); add(txtRut);
